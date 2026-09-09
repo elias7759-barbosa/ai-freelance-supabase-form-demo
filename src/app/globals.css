@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f5f6f3;
+  color: #182923;
+  font:
+    16px/1.6 Arial,
+    Helvetica,
+    sans-serif;
+}
+header,
+footer {
+  max-width: 1120px;
+  margin: auto;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+header {
+  border-bottom: 1px solid #dbe2dc;
+}
+header a {
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: inherit;
+}
+header span,
+footer,
+.note {
+  color: #63736a;
+}
+main {
+  max-width: 1120px;
+  margin: auto;
+  padding: 72px 32px;
+  min-height: 75vh;
+}
+h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 16px 0 24px;
+}
+.intro {
+  max-width: 780px;
+}
+.intro > p {
+  max-width: 570px;
+}
+.eyebrow {
+  color: #35715a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.button,
+button {
+  display: inline-block;
+  background: #245c46;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button {
+  margin-top: 20px;
+}
+.steps {
+  margin-top: 60px;
+  font-size: 14px;
+}
+.steps span {
+  margin: 0 20px;
+  color: #7b8e81;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+.contact h1 {
+  font-size: 48px;
+}
+.note {
+  font-size: 14px;
+  margin-top: 32px;
+}
+form {
+  background: white;
+  border: 1px solid #dbe2dc;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 30px #18292306;
+}
+.field {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aab9af;
+  border-radius: 6px;
+  font: inherit;
+}
+textarea {
+  resize: vertical;
+}
+input:focus,
+textarea:focus {
+  outline: 2px solid #35715a;
+  outline-offset: 2px;
+}
+button {
+  width: 100%;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.error {
+  color: #a32929;
+  font-size: 14px;
+}
+.success {
+  color: #245c46;
+  background: #edf7f0;
+  padding: 14px;
+  border-radius: 6px;
+}
+footer {
+  border-top: 1px solid #dbe2dc;
+}
+@media (max-width: 700px) {
+  header,
+  footer {
+    padding: 20px;
+  }
+  header span {
+    display: none;
+  }
+  main {
+    padding: 40px 20px;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .contact h1 {
+    font-size: 38px;
+  }
+  form {
+    padding: 22px;
+  }
+  .steps span {
+    margin: 0 8px;
+  }
+}
