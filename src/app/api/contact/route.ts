@@ -37,7 +37,6 @@ export async function POST(request: Request) {
     const { error } = await supabase
       .from("demo2_form_submissions")
       .insert(result.data)
-      .select()
       .abortSignal(AbortSignal.timeout(10000));
     if (error) {
       console.error("Contact persistence rejected", { code: error.code });
