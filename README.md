@@ -45,7 +45,7 @@ E2E runs against a production build on desktop and mobile. Success is checked ag
 No real values are versioned. Trace recording is disabled to avoid capturing configured URLs in browser artifacts. Management failures suppress response bodies and credentials.
 
 ## Project Status
-Private demonstration, technically completed and awaiting human publication review. Baseline, broken and fixed tags are preserved. Independent source audit approved the minimal repair; cloud E2E was run on the implementation station. Not deployed as a public service. Public anonymous forms need an abuse-control strategy before internet exposure; this demo does not claim production rate limiting or exactly-once delivery across retries. A network timeout may leave the outcome uncertain; single-click locking prevents only concurrent submissions from this form.
+**Demonstration Project.** The troubleshooting scenario is complete, independently reviewed and published as a technical portfolio sample. Baseline, broken and fixed tags are preserved. Independent source audit approved the minimal repair; cloud E2E was run on the implementation station. Not deployed as a public service. Public anonymous forms need an abuse-control strategy before internet exposure; this demo does not claim production rate limiting or exactly-once delivery across retries. A network timeout may leave the outcome uncertain; single-click locking prevents only concurrent submissions from this form.
 
 ## References
 - [Supabase INSERT](https://supabase.com/docs/reference/javascript/insert)
